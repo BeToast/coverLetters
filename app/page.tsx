@@ -3,6 +3,7 @@ import Title from 'components/Title'
 import Text from 'components/Text'
 import WidthGrow from 'components/WidthGrow';
 import Hr from 'components/Hr';
+import Signature from 'components/Signature';
 
 // scroll  handler
 import dynamic from 'next/dynamic'
@@ -20,9 +21,9 @@ export default function Template() {
             <Photo />
           {/* </WidthGrow> */}
         </div>
-        <div className='ml-10'>
+        <div className='ml-10 h-[587px]'>
           <WidthGrow>
-            <div className='flex flex-col justify-between'>
+            <div className='flex flex-col justify-center h-full'>
               <div className='w-[500px]'>
                 <Title>
                   Meet your new developer
@@ -37,14 +38,12 @@ export default function Template() {
                   </Text.P>
                 </Text.Frame>
               </div>
-              <div>
-
+              <div className='flex w-[500px] justify-end'>
+                <Signature/>
               </div>
             </div>
-            
           </WidthGrow>
         </div>
-        {/* <Hr className=' ml-[30px] w-[910px]'/> */}
       </div>
     </main>
     

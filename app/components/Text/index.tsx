@@ -4,7 +4,7 @@ const Frame: React.FC<{
   children,
 }) => {
   return(<>
-    <div className="text-suit-dark font-body max-w-prose">
+    <div className="flex flex-col space-y-1 text-large text-suit-dark font-body max-w-prose">
       {children}
     </div>
   </>);
@@ -15,7 +15,7 @@ const P: React.FC<{
   children,
 }) => {
   return(<>
-    <p>
+    <p className="indent-4">
       {children}
     </p>
   </>);

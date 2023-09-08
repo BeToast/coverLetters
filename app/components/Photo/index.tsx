@@ -7,7 +7,6 @@ import MyPhotoPlace from 'public/myPhotoPlace.svg';
 import MyPhoto from 'public/myPhoto.webp';
 import $ from "jquery";
 
-import { useEffect, useState } from 'react';
 
 const Photo: React.FC<{
   

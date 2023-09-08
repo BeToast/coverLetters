@@ -4,7 +4,7 @@ const Title: React.FC<{
   children
 }) => {
   return(<>
-    <div className="text-black max-w-prose font-head text-xl">
+    <div className="text-suit-dark max-w-prose font-head text-3xl">
       {children}
     </div>
   </>);
