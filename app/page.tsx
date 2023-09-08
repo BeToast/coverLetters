@@ -38,7 +38,24 @@ export default function Template() {
                   </Text.P>
                 </Text.Frame>
               </div>
-              <div className='flex w-[500px] justify-end'>
+              <div className='flex w-[500px] items-center justify-between pt-12'>
+                <Text.Frame>
+                  <Text.Link
+                    href='https://drive.google.com/file/d/1XuhAnWxb-Rg4Q3mBLxxKbghDf-1J13Xr/view'
+                  >
+                    view my CV
+                  </Text.Link>
+                  <Text.Link
+                    href='https://github.com/BeToast'
+                  >
+                    view my Github
+                  </Text.Link>  
+                  <Text.Link
+                    href='https://www.linkedin.com/in/blake-m-preston/'
+                  >
+                    view my Linkedin
+                  </Text.Link>
+                </Text.Frame>
                 <Signature/>
               </div>
             </div>

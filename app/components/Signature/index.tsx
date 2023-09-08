@@ -10,7 +10,7 @@ const Signature: React.FC<{
 }) => {
   return(<>
     <Image
-      className='pt-10 pb-[15px]'
+      className='pt-10 pb-1'
       width={200}
       height={54}
       src={signature} 

@@ -1,10 +1,12 @@
+import './style.css'
+
 const Frame: React.FC<{
   children: React.ReactNode,
 }> = ({
   children,
 }) => {
   return(<>
-    <div className="flex flex-col space-y-1 text-large text-suit-dark font-body max-w-prose">
+    <div className="flex flex-col space-y-2 text-large text-suit-dark font-body max-w-prose">
       {children}
     </div>
   </>);
@@ -21,5 +23,21 @@ const P: React.FC<{
   </>);
 }
 
-const Text = { Frame, P }
+const Link: React.FC<{
+  children: React.ReactNode,
+  href: string,
+}> = ({
+  children,
+  href,
+}) => {
+  return(<>
+    <a href={href} target="_blank">
+      <p className="left-underline">
+        {children}
+      </p>
+    </a>
+  </>);
+}
+
+const Text = { Frame, P, Link }
 export default Text;
