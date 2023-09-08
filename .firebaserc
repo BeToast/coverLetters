@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "blake-prestonized"
+  },
+  "targets": {
+    "blake-prestonized": {
+      "hosting": {
+        "cover": [
+          "cover-letter"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

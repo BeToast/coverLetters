@@ -1,0 +1,16 @@
+.width-grow-0 {
+  width: 0%;
+}
+.width-grow-1 {
+  --width-grow-animation: widthGrow 1.8s ease forwards;
+
+  animation: var(--width-grow-animation);
+  -webkit-animation: var(--width-grow-animation);
+  -moz-animation: var(--width-grow-animation);
+  -o-animation: var(--width-grow-animation);
+  -ms-animation: var(--width-grow-animation);
+}
+@keyframes widthGrow {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}

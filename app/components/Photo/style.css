@@ -1,0 +1,12 @@
+.fade-out {
+  animation: fadeOut 1s ease-out;
+  -webkit-animation: fadeOut 1s ease-out;
+  -moz-animation: fadeOut 1s ease-out;
+  -o-animation: fadeOut 1s ease-out;
+  -ms-animation: fadeOut 1s ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
