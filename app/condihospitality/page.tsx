@@ -26,22 +26,25 @@ export default function Template() {
             <div className='flex flex-col justify-center h-full'>
               <div className='w-[500px]'>
                 <Title>
-                  Meet your new developer
+                  Meet your new mixologist.
                 </Title>
                 <Hr className='my-6'/>
                 <Text.Frame>
+                  <Text.Greeting>
+                    Hyia,
+                  </Text.Greeting>
                   <Text.P>
-                Lorem ipsum dolor sit amet, te vix lobortis reprimique, eam consul iisque omittam ut. Mel rebum imperdiet molestiae ex, labores offendit sed ut. Ei quem dicant apeirian sed, ne ius imperdiet cotidieque. Mei tantas doctus cu.
+                    I, Blake Preston, would like to apply for a position at your new location in Galway city. Due to my bartending experience in the States, which has a refined cocktail market, I would be a valuable asset to your mixologist team. Alternatively, I would be content as a server or barista.
                   </Text.P>
                   <Text.P>
-        Mea ex affert eirmod gloriatur. Possit definiebas has ut, vis ullum meliore referrentur in. Est dico veniam decore te, nonumes reformidans vel ut, no zril regione incorrupte per. Duo corpora ponderum id. Vix et docendi sensibus, et dolorem appetere reprehendunt eos, pri id inani denique.
+                    I hope to join your team soon and help bring your vision for this new establishment to life.
                   </Text.P>
                 </Text.Frame>
               </div>
-              <div className='flex w-[500px] items-center justify-between pt-12'>
+              <div className='flex w-[500px] items-end justify-between pt-12 pb-1'>
                 <Text.Frame>
                   <Text.Link
-                    href='https://drive.google.com/file/d/1XuhAnWxb-Rg4Q3mBLxxKbghDf-1J13Xr/view'
+                    href='https://drive.google.com/file/d/1Q2k9S-p9mIgeMlnbA1m2c_bNc6tfcomL/view?usp=sharing'
                   >
                     view my CV
                   </Text.Link>
@@ -51,7 +54,9 @@ export default function Template() {
                     view my Linkedin
                   </Text.Link>
                 </Text.Frame>
-                <Signature/>
+                <Signature>
+                  All the best,
+                </Signature>
               </div>
             </div>
           </WidthGrow>

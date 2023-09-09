@@ -11,6 +11,19 @@ const Frame: React.FC<{
     </div>
   </>);
 }
+
+const Greeting: React.FC<{
+  children: React.ReactNode,
+}> = ({
+  children,
+}) => {
+  return(<>
+    <p className="">
+      {children}
+    </p>
+  </>);
+}
+
 const P: React.FC<{
   children: React.ReactNode,
 }> = ({
@@ -22,6 +35,19 @@ const P: React.FC<{
     </p>
   </>);
 }
+
+const Closing: React.FC<{
+  children: React.ReactNode,
+}> = ({
+  children,
+}) => {
+  return(<>
+    <p className=''>
+      {children}
+    </p>
+  </>);
+}
+
 
 const Link: React.FC<{
   children: React.ReactNode,
@@ -39,5 +65,5 @@ const Link: React.FC<{
   </>);
 }
 
-const Text = { Frame, P, Link }
+const Text = { Frame, Greeting, P, Closing, Link }
 export default Text;

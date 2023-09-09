@@ -38,7 +38,7 @@ export default function Template() {
                   </Text.P>
                 </Text.Frame>
               </div>
-              <div className='flex w-[500px] items-center justify-between pt-12'>
+              <div className='flex w-[500px] items-end justify-between pt-12 pb-1'>
                 <Text.Frame>
                   <Text.Link
                     href='https://drive.google.com/file/d/1XuhAnWxb-Rg4Q3mBLxxKbghDf-1J13Xr/view'
@@ -56,7 +56,9 @@ export default function Template() {
                     view my Linkedin
                   </Text.Link>
                 </Text.Frame>
-                <Signature/>
+                <Signature>
+                  All the best,
+                </Signature>
               </div>
             </div>
           </WidthGrow>
