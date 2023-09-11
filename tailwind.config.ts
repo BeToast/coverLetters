@@ -7,6 +7,10 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'pc': '956px',
+      'tablet': '525px',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -28,7 +32,7 @@ const config: Config = {
       'suit': 'hsl(208, 9%, 21%)',
       'suit-dark': 'hsl(214, 9%, 15%)',
       'suit-darker': 'hsl(216, 11.6%, 8.4%)',
-    }
+    },
   },
   plugins: [],
 }

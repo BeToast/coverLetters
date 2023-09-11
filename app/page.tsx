@@ -15,7 +15,7 @@ export default function Template() {
   const mainId = "template"
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center h-full'>
-      <div className='flex items-center mr-[50px]'>
+      <div className='flex items-center mr-[16px]'>
         <div className='w-[400px]'>
           {/* <WidthGrow> */}
             <Photo />

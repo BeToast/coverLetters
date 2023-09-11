@@ -1,7 +1,5 @@
 'use client'
 
-import './style.css';
-
 import Image from 'next/image';
 import MyPhotoPlace from 'public/myPhotoPlace.svg';
 import MyPhoto from 'public/myPhoto.webp';
@@ -23,14 +21,13 @@ const Photo: React.FC<{
 
   return(<>
     <div className='relative'>
-      <div id='silhouette' className='absolute z-10 w-full h-[full]'>
+      <div id='silhouette' className='absolute z-10 w-full h-full'>
         <MyPhotoPlace/>
       </div>
         <Image
-          className='z-0'
+          className={'z-0 pc:h-['+height+'px]'}
           // className="max-w-[400px] min-w-[200px]"
           width={width}
-          height={height}
           src={MyPhoto} 
           alt={''}
           priority={false}
