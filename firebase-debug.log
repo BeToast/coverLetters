@@ -1,0 +1,293 @@
+[debug] [2023-09-11T17:52:15.370Z] ----------------------------------------------------------------------
+[debug] [2023-09-11T17:52:15.372Z] Command:       /home/blake/.nvm/versions/node/v16.20.0/bin/node /home/blake/.nvm/versions/node/v16.20.0/bin/firebase deploy
+[debug] [2023-09-11T17:52:15.373Z] CLI Version:   12.5.2
+[debug] [2023-09-11T17:52:15.373Z] Platform:      linux
+[debug] [2023-09-11T17:52:15.373Z] Node Version:  v16.20.0
+[debug] [2023-09-11T17:52:15.377Z] Time:          Mon Sep 11 2023 18:52:15 GMT+0100 (British Summer Time)
+[debug] [2023-09-11T17:52:15.377Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-11T17:52:15.451Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-11T17:52:15.451Z] > authorizing via signed-in user (blake.m.preston@gmail.com)
+[debug] [2023-09-11T17:52:15.452Z] [iam] checking project blake-prestonized for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-11T17:52:15.453Z] > refreshing access token with scopes: []
+[debug] [2023-09-11T17:52:15.455Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-11T17:52:15.455Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-11T17:52:15.561Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-11T17:52:15.561Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-11T17:52:15.578Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions [none]
+[debug] [2023-09-11T17:52:15.578Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions x-goog-quota-user=projects/blake-prestonized
+[debug] [2023-09-11T17:52:15.578Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-11T17:52:16.262Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions 200
+[debug] [2023-09-11T17:52:16.262Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-11T17:52:16.263Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized [none]
+[debug] [2023-09-11T17:52:16.573Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized 200
+[debug] [2023-09-11T17:52:16.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized {"projectId":"blake-prestonized","projectNumber":"483376652902","displayName":"Prestonized","name":"projects/blake-prestonized","resources":{"hostingSite":"blake-prestonized"},"state":"ACTIVE","etag":"1_c7ef1862-3820-46b9-b243-3e7284580c14"}
+[debug] [2023-09-11T17:52:18.974Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites pageToken=&pageSize=10
+[debug] [2023-09-11T17:52:19.967Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites 200
+[debug] [2023-09-11T17:52:19.967Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites {"sites":[{"name":"projects/blake-prestonized/sites/blake-prestonized","defaultUrl":"https://blake-prestonized.web.app","appId":"1:483376652902:web:d4ddaeb4f23513a6d043a7","type":"DEFAULT_SITE"},{"name":"projects/blake-prestonized/sites/cover-letter","defaultUrl":"https://cover-letter.web.app","appId":"1:483376652902:web:976addc43103c73dd043a7","type":"USER_SITE"}]}
+[debug] [2023-09-11T17:52:19.968Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config [none]
+[debug] [2023-09-11T17:52:20.836Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config 200
+[debug] [2023-09-11T17:52:20.836Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config {"projectId":"blake-prestonized","appId":"1:483376652902:web:976addc43103c73dd043a7","storageBucket":"blake-prestonized.appspot.com","apiKey":"AIzaSyAgRqeJ2IHo6WyxPTqM-j8PsYf9mCTT1t8","authDomain":"blake-prestonized.firebaseapp.com","messagingSenderId":"483376652902","measurementId":"G-DZBJF5M388"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] (node:39601) [DEP_WEBPACK_MODULE_UPDATE_HASH] DeprecationWarning: Module.updateHash: Use new ChunkGraph API
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/7)
+
+[info] - info Generating static pages (1/7)
+
+[info] ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/722.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] 
+Error occurred prerendering page "/portershed". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/722.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] - info Generating static pages (3/7)
+
+[info] ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/722.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/722.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] 
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/722.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] - info Generating static pages (5/7)
+
+[info] 
+Error occurred prerendering page "/condihospitality". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/722.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] - info Generating static pages (7/7)
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/condihospitality/page: /condihospitality
+	/page: /
+	/portershed/page: /portershed
+
+[debug] [2023-09-11T17:52:41.274Z] Error: ENOENT: no such file or directory, open '/home/blake/Webdev/coverletters/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-11T17:54:03.709Z] ----------------------------------------------------------------------
+[debug] [2023-09-11T17:54:03.711Z] Command:       /home/blake/.nvm/versions/node/v16.20.0/bin/node /home/blake/.nvm/versions/node/v16.20.0/bin/firebase deploy
+[debug] [2023-09-11T17:54:03.711Z] CLI Version:   12.5.2
+[debug] [2023-09-11T17:54:03.711Z] Platform:      linux
+[debug] [2023-09-11T17:54:03.712Z] Node Version:  v16.20.0
+[debug] [2023-09-11T17:54:03.712Z] Time:          Mon Sep 11 2023 18:54:03 GMT+0100 (British Summer Time)
+[debug] [2023-09-11T17:54:03.712Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-11T17:54:03.781Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-11T17:54:03.782Z] > authorizing via signed-in user (blake.m.preston@gmail.com)
+[debug] [2023-09-11T17:54:03.782Z] [iam] checking project blake-prestonized for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-11T17:54:03.784Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions [none]
+[debug] [2023-09-11T17:54:03.784Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions x-goog-quota-user=projects/blake-prestonized
+[debug] [2023-09-11T17:54:03.784Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-11T17:54:04.586Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions 200
+[debug] [2023-09-11T17:54:04.586Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-11T17:54:04.587Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized [none]
+[debug] [2023-09-11T17:54:04.834Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized 200
+[debug] [2023-09-11T17:54:04.834Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized {"projectId":"blake-prestonized","projectNumber":"483376652902","displayName":"Prestonized","name":"projects/blake-prestonized","resources":{"hostingSite":"blake-prestonized"},"state":"ACTIVE","etag":"1_c7ef1862-3820-46b9-b243-3e7284580c14"}
+[debug] [2023-09-11T17:54:07.029Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites pageToken=&pageSize=10
+[debug] [2023-09-11T17:54:07.972Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites 200
+[debug] [2023-09-11T17:54:07.972Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites {"sites":[{"name":"projects/blake-prestonized/sites/blake-prestonized","defaultUrl":"https://blake-prestonized.web.app","appId":"1:483376652902:web:d4ddaeb4f23513a6d043a7","type":"DEFAULT_SITE"},{"name":"projects/blake-prestonized/sites/cover-letter","defaultUrl":"https://cover-letter.web.app","appId":"1:483376652902:web:976addc43103c73dd043a7","type":"USER_SITE"}]}
+[debug] [2023-09-11T17:54:07.974Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config [none]
+[debug] [2023-09-11T17:54:08.618Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config 200
+[debug] [2023-09-11T17:54:08.618Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config {"projectId":"blake-prestonized","appId":"1:483376652902:web:976addc43103c73dd043a7","storageBucket":"blake-prestonized.appspot.com","apiKey":"AIzaSyAgRqeJ2IHo6WyxPTqM-j8PsYf9mCTT1t8","authDomain":"blake-prestonized.firebaseapp.com","messagingSenderId":"483376652902","measurementId":"G-DZBJF5M388"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] (node:40577) [DEP_WEBPACK_MODULE_UPDATE_HASH] DeprecationWarning: Module.updateHash: Use new ChunkGraph API
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/7)
+
+[info] - info Generating static pages (1/7)
+
+[info] ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/388.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/388.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] 
+Error occurred prerendering page "/portershed". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/388.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] - info Generating static pages (3/7)
+
+[info] 
+Error occurred prerendering page "/condihospitality". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/388.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/388.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] - info Generating static pages (5/7)
+
+[info] 
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at AppearAffect (/home/blake/Webdev/coverletters/.next/server/chunks/388.js:85:19)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:117:273)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:123:11)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at jg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:118:215)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:91)
+    at kg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:127:155)
+    at mg (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:126:289)
+    at Z (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/react-dom/cjs/react-dom-server.edge.production.min.js:124:350)
+
+[info] - info Generating static pages (7/7)
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/condihospitality/page: /condihospitality
+	/page: /
+	/portershed/page: /portershed
+
+[debug] [2023-09-11T17:54:25.938Z] Error: ENOENT: no such file or directory, open '/home/blake/Webdev/coverletters/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
