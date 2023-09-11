@@ -55,6 +55,16 @@ export default function Template() {
                   >
                     view my Linkedin
                   </Text.Link>
+                  <Text.Link
+                    href='tel:+353-85-260-9548'
+                  >
+                    085-260-9548
+                  </Text.Link>
+                  <Text.Link
+                    href='mailto:blake.m.preston@gmail.com'
+                  >
+                    blake.m.preston@gmail.com
+                  </Text.Link>
                 </Text.Frame>
                 <Signature>
                   All the best,

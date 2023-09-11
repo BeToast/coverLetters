@@ -15,39 +15,44 @@ export default function Template() {
   const mainId = "template"
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center h-full'>
-      <div className='flex items-center mr-[50px]'>
+      <div className='flex justify-center items-center mr-[50px]'>
         <div className='w-[400px]'>
           {/* <WidthGrow> */}
             <Photo />
           {/* </WidthGrow> */}
         </div>
-        <div className='ml-10 h-[587px] w-[500px]'>
+        <div className='ml-10 h-[587px]'>
           <WidthGrow>
             <div className='flex flex-col justify-center h-full'>
               <div className='w-[500px]'>
                 <Title>
-                  Meet your new mixologist.
+                  Meet your new developer 😉
                 </Title>
                 <Hr className='my-6'/>
                 <Text.Frame>
                   <Text.Greeting>
-                    Hyia,
+                    Hello Portershed!
                   </Text.Greeting>
                   <Text.P>
-                    I, Blake Preston, would like to apply for a position at your new location in Galway city. Due to my bartending experience in the States, which has a refined cocktail market, I would be a valuable asset to your mixologist team. Alternatively, I would be content as a server or barista.
+                    I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Over the summer, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, Tailwindcss and Firebase Hosting. I just finished my first freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                   </Text.P>
                   <Text.P>
-                    I hope to join your team soon and help bring your vision for this new establishment to life.
+                    Free-lance development is fine, but I would much prefer to start my career with a company in a thriving environment like the Portershed. I would bring value to your company by either integrating into your team of developers or by offering a fresh perspective to revamp and modernize your existing solutions.
                   </Text.P>
                 </Text.Frame>
               </div>
-              <div className='flex w-[500px] items-end justify-between pt-12 pb-1'>
+              <div className='flex w-[500px] items-center justify-between pt-8'>
                 <Text.Frame>
                   <Text.Link
-                    href='https://drive.google.com/file/d/1Q2k9S-p9mIgeMlnbA1m2c_bNc6tfcomL/view?usp=sharing'
+                    href='https://drive.google.com/file/d/1XuhAnWxb-Rg4Q3mBLxxKbghDf-1J13Xr/view'
                   >
                     view my CV
                   </Text.Link>
+                  <Text.Link
+                    href='https://github.com/BeToast'
+                  >
+                    view my Github
+                  </Text.Link>  
                   <Text.Link
                     href='https://www.linkedin.com/in/blake-m-preston/'
                   >
@@ -65,7 +70,7 @@ export default function Template() {
                   </Text.Link>
                 </Text.Frame>
                 <Signature>
-                  All the best,
+                  I look forward to meeting you,
                 </Signature>
               </div>
             </div>

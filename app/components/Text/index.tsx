@@ -51,16 +51,24 @@ const Closing: React.FC<{
 
 const Link: React.FC<{
   children: React.ReactNode,
+  noP?: boolean
   href: string,
 }> = ({
   children,
+  noP = false,
   href,
 }) => {
   return(<>
     <a href={href} target="_blank">
-      <p className="left-underline">
-        {children}
-      </p>
+      {noP ? 
+        <span className="left-underline">
+          {children}
+        </span>
+        :
+        <p className="left-underline">
+          {children}
+        </p>
+      }
     </a>
   </>);
 }
