@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@types/jquery": "^3.5.18"
+    "@types/jquery": "^3.5.18",
+    "sharp": "^0.32.5"
   }
 }
