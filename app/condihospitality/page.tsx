@@ -1,7 +1,7 @@
 import Photo from 'components/Photo'
 import Title from 'components/Title'
 import Text from 'components/Text'
-import WidthGrow from 'components/WidthGrow';
+import AppearAffect from 'components/AppearAffect';
 import Hr from 'components/Hr';
 import Signature from 'components/Signature';
 
@@ -12,36 +12,32 @@ const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
 });
 
 export default function Template() {
-  const mainId = "template"
+  const mainId = "template";
+
   return (<>
-    <main id={mainId} className='flex flex-wrap justify-center items-center h-full'>
-      <div className='flex items-center mr-[50px]'>
-        <div className='w-[400px]'>
-          {/* <WidthGrow> */}
-            <Photo />
-          {/* </WidthGrow> */}
-        </div>
-        <div className='ml-10 h-[587px] w-[500px]'>
-          <WidthGrow>
-            <div className='flex flex-col justify-center h-full'>
-              <div className='w-[500px]'>
-                <Title>
-                  Meet your new mixologist.
-                </Title>
-                <Hr className='my-6'/>
-                <Text.Frame>
-                  <Text.Greeting>
-                    Hyia,
-                  </Text.Greeting>
-                  <Text.P>
-                    I, Blake Preston, would like to apply for a position at your new location in Galway city. Due to my bartending experience in the States, which has a refined cocktail market, I would be a valuable asset to your mixologist team. Alternatively, I would be content as a server or barista.
-                  </Text.P>
-                  <Text.P>
-                    I hope to join your team soon and help bring your vision for this new establishment to life.
-                  </Text.P>
-                </Text.Frame>
-              </div>
-              <div className='flex w-[500px] items-end justify-between pt-12 pb-1'>
+    <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full max-w-full'>
+      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[587px] w-full pc:w-auto pc:order-last'}>
+        <AppearAffect>
+          <div className='flex flex-col justify-center h-full'>
+            <div className='pc:w-[500px]'>
+              <Title>
+              Meet your new mixologist
+              </Title>
+              <Hr className='my-6'/>
+              <Text.Frame>
+                <Text.Greeting>
+                  Hyia,
+                </Text.Greeting>
+                <Text.P>
+                  I, Blake Preston, would like to apply for a position at your new location in Galway city. Due to my bartending experience in the States, which has a refined cocktail market, I would be a valuable asset to your mixologist team. Alternatively, I would be content as a server or barista.
+                </Text.P>
+                <Text.P>
+                  I hope to join your team soon and help bring your vision for this new establishment to life.
+                </Text.P>
+              </Text.Frame>
+            </div>
+            <div className='flex flex-wrap pc:w-[500px] items-end justify-between pt-12 pb-1'>
+              <div className='pr-8'>
                 <Text.Frame>
                   <Text.Link
                     href='https://drive.google.com/file/d/1Q2k9S-p9mIgeMlnbA1m2c_bNc6tfcomL/view?usp=sharing'
@@ -64,13 +60,19 @@ export default function Template() {
                     blake.m.preston@gmail.com
                   </Text.Link>
                 </Text.Frame>
+              </div>
+              <div className='mt-12'>
                 <Signature>
                   All the best,
                 </Signature>
               </div>
             </div>
-          </WidthGrow>
-        </div>
+          </div>
+        </AppearAffect>
+      </div>
+
+      <div className='mt-16 pc:mt-0 w-[400px] '>
+        <Photo />
       </div>
     </main>
     
