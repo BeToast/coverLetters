@@ -33,7 +33,9 @@ const AppearAffect: React.FC<{
     )
   :
     <WidthGrow>
-      {children}
+      <div className="w-[500px]">
+        {children}
+      </div>
     </WidthGrow>
   )}
   </>);
