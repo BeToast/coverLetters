@@ -16,7 +16,7 @@ export default function Template() {
 
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
-      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[587px] w-full pc:w-auto pc:order-last'}>
+      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[587px] w-full pc:w-[540px] pc:order-last'}>
         <AppearAffect>
           <div className='flex flex-col justify-center h-full'>
             <div className='pc:w-[500px]'>
