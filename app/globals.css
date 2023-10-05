@@ -8,9 +8,9 @@
   --background-end-rgb: hsl(158 80% 70%); */
   /* --background-start-rgb: hsl(90, 22%, 68.4%);
   --background-end-rgb: hsl(90, 22%, 68.4%); */
-  --background-hsl: hsl(189, 9.1%, 65%);
+  --background-hsl: hsl(191, 9%, 65%);
 
-  
+  cursor: none !important;
 }
 
 /* @media (prefers-color-scheme: dark) {

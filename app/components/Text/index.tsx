@@ -1,4 +1,5 @@
 import './style.css'
+import { shrinkCursor, growCursor } from 'components/CursorMod';
 
 const Frame: React.FC<{
   children: React.ReactNode,
@@ -30,7 +31,7 @@ const P: React.FC<{
   children,
 }) => {
   return(<>
-    <p className="indent-4">
+    <p className="indent-4 text-justify hyphens-auto">
       {children}
     </p>
   </>);
@@ -58,14 +59,15 @@ const Link: React.FC<{
   noP = false,
   href,
 }) => {
+
   return(<>
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" className='cursor-none'>
       {noP ? 
-        <span className="left-underline">
+        <span className="left-underline" onMouseOver={shrinkCursor} onMouseOut={growCursor}>
           {children}
         </span>
         :
-        <p className="left-underline">
+        <p className="left-underline" onMouseOver={shrinkCursor} onMouseOut={growCursor}>
           {children}
         </p>
       }
