@@ -1,4 +1,5 @@
 'use client'
+
 import $ from "jquery";
 
 const ScrollHandler: React.FC<{

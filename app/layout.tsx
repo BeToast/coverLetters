@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 
+import GtagScriptInit from 'components/Gtag/GtagScriptInit';
+
 // font
 import { Kaisei_HarunoUmi, Bai_Jamjuree, } from 'next/font/google';
 const fontHead = Kaisei_HarunoUmi({
@@ -35,6 +37,8 @@ export default function RootLayout({
       </head>
       <body className="h-screen w-screen">
         {children}
+
+        <GtagScriptInit />
       </body>
     </html>
   )
