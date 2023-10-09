@@ -1,4 +1,13 @@
 import './globals.css'
+
+
+// scroll  handler
+import dynamic from 'next/dynamic'
+const DynamicCursorMod = dynamic(() => import('components/CursorMod'),{
+  ssr: false,
+});
+// import CursorMod from './components/CursorMod';
+
 import type { Metadata } from 'next'
 
 import GtagScriptInit from 'components/Gtag/GtagScriptInit';
@@ -35,10 +44,12 @@ export default function RootLayout({
     <html lang="en" className={`${fontHead.variable} ${fontBody.variable} scroll-smooth`}>
       <head>
       </head>
+      {/* <body className="h-full w-full"> */}
       <body className="h-screen w-screen">
         {children}
 
         <GtagScriptInit />
+        <DynamicCursorMod />
       </body>
     </html>
   )

@@ -21,29 +21,34 @@ export default function Template() {
           <div className='flex flex-col justify-center h-full'>
             <div className='pc:w-[500px]'>
               <Title>
-              Meet your new mixologist
+                Looking for a developer?
               </Title>
               <Hr className='my-6'/>
               <Text.Frame>
                 <Text.Greeting>
-                  Hyia,
+                  Greetings OpenJaw,
                 </Text.Greeting>
                 <Text.P>
-                  I, Blake Preston, would like to apply for a position at your new location in Galway city. Due to my bartending experience in the States, which has a refined cocktail market, I would be a valuable asset to your mixologist team. Alternatively, I would be content as a server or barista.
+                  I, Blake Preston, recently completed my final year in Computer Science and Information Technology at the University of Galway. In third year, I did placement at OpenJaw. During my time with you, I developed a keen interest in full-stack development. Over the summer, I applied my knowledge to learn how to develop full-stack web applications using technologies such as Next.js, React, Tailwind CSS, and Firebase Hosting. I am excited to share that I have completed my first freelance project for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                 </Text.P>
                 <Text.P>
-                  I hope to join your team soon and help bring your vision for this new establishment to life.
+                  While freelance development has been a valuable experience, my goal is to start my career with a sound company like OpenJaw.
                 </Text.P>
               </Text.Frame>
             </div>
             <div className='flex flex-wrap pc:w-[500px] items-end justify-between pt-12 pb-1'>
               <div className='pr-8'>
                 <Text.Frame>
-                  <Text.Link
-                    href='https://drive.google.com/file/d/1Q2k9S-p9mIgeMlnbA1m2c_bNc6tfcomL/view?usp=sharing'
+                <Text.Link
+                    href='https://drive.google.com/file/d/1XuhAnWxb-Rg4Q3mBLxxKbghDf-1J13Xr/view'
                   >
                     view my CV
                   </Text.Link>
+                  <Text.Link
+                    href='https://github.com/BeToast'
+                  >
+                    view my Github
+                  </Text.Link>  
                   <Text.Link
                     href='https://www.linkedin.com/in/blake-m-preston/'
                   >
@@ -63,7 +68,7 @@ export default function Template() {
               </div>
               <div className='mt-12'>
                 <Signature>
-                  All the best,
+                  I hope to join your team again,
                 </Signature>
               </div>
             </div>

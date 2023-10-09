@@ -1,0 +1,61 @@
+'use client'
+
+import './style.css'
+import $ from "jquery";
+
+const CursorMod: React.FC<{
+
+}> = ({
+
+}) => {
+  //wait until cursor is loaded
+  new Promise<JQuery<HTMLElement>>((resolve, reject) => {
+    const checkForCursor = () => {
+      var cursor = $('#cursor');
+      if (cursor.length > 0) {
+        resolve(cursor);
+      } else if (attempts < 20) { // Limit the number of attempts to prevent infinite loop
+        attempts++;
+        setTimeout(checkForCursor, 200);
+      } else {
+        reject(new Error(`Element with #cursor not found.`));
+      }
+    };
+
+    let attempts = 0;
+    checkForCursor();
+
+  }).then((cursor) => {
+    const positionElement = (e: any)=> {
+      cursor.css('left', e.clientX + 'px');
+      cursor.css('top', e.clientY + 'px');
+    }
+    
+  
+    window.addEventListener('mousemove', positionElement) ; 
+    window.addEventListener('mousedown', shrinkCursor) ;
+    window.addEventListener('mouseup', growCursor) ;
+    $(document).on('mouseleave', hideCursor) ;
+    $(document).on('mouseenter', showCursor) ;
+
+  }).catch();
+
+  return(<>
+    <div id="cursor" className='absolute z-10 cursor'/>
+  </>);
+}
+
+export default CursorMod;
+
+export const shrinkCursor = (e: any)=> {
+  $('#cursor').addClass('small-cursor');
+}
+export const growCursor = (e: any)=> {
+  $('#cursor').removeClass('small-cursor');
+}
+export const hideCursor = (e: any)=> {
+  $('#cursor').addClass('hidden-cursor');
+}
+export const showCursor = (e: any)=> {
+  $('#cursor').removeClass('hidden-cursor');
+}
