@@ -12,7 +12,7 @@ const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
 });
 
 export default function Template() {
-  const mainId = "template";
+  const mainId = "condihospitality";
 
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>

@@ -1,5 +1,6 @@
 'use client'
 
+import { gtagEvent } from '@/app/lib/googleAnalytics/helpers';
 import './style.css'
 import $ from "jquery";
 
@@ -26,6 +27,7 @@ const CursorMod: React.FC<{
     checkForCursor();
 
   }).then((cursor) => {
+    gtagEvent({ action:'loaded', category:'cursor', label:'good' })
     const positionElement = (e: any)=> {
       cursor.css('left', e.clientX + 'px');
       cursor.css('top', e.clientY + 'px');

@@ -1,6 +1,7 @@
 'use client'
 
 import './style.css';
+import './helpers';
 
 const WidthGrow: React.FC<{
   children: React.ReactNode,

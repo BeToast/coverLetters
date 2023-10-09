@@ -1,8 +1,10 @@
 'use client'
 
-import Image from 'next/image';
 import MyPhotoPlace from 'public/myPhotoPlace.svg';
 import MyPhoto from 'public/myPhoto.webp';
+import { gtagEvent } from 'lib/googleAnalytics/helpers';
+
+import Image from 'next/image';
 import $ from "jquery";
 
 
@@ -13,10 +15,10 @@ const Photo: React.FC<{
 }) => {
   const width = 400;
   const height = 587;
-  const myPhotoSrc = 'public/myPhoto.webp'
 
   const onLoadHandler = (() => {
     $('#silhouette').addClass('fade-out');
+    gtagEvent({ action:'loaded', category:'blakePhoto', label:'good' });
   });
 
   return(<>

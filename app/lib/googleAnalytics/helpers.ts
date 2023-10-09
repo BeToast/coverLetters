@@ -13,13 +13,13 @@ export const pageview = (url: string) => {
 };
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
-export const event = (
-  { action, category, label, value }
+export const gtagEvent = (
+  { action, category, label, value=0 }
   :
   { action: string,
     category:string,
     label:string,
-    value:number 
+    value?:number 
   }
 ) => {
   window.gtag("event", action, {

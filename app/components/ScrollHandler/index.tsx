@@ -1,6 +1,37 @@
 'use client'
 
+import { gtagEvent } from "@/app/lib/googleAnalytics/helpers";
 import $ from "jquery";
+
+
+
+const viewHeight: number = window.innerHeight;
+
+const checkItems = (widthGrow: Element[]) => {
+  for(let i = 0; i < widthGrow.length; i++){
+    var currItem = widthGrow[i];
+    if(currItem){
+      checkItem(currItem);
+    }
+  }
+}
+
+const checkItem = (item: Element) => {
+  if(item){
+    var itemTop = item.getBoundingClientRect().top;
+    if ( itemTop > 0 && itemTop < viewHeight){
+      // item.classList.add("width-grow-1");
+      // item.classList.remove("width-grow-0");
+    }
+  }
+}
+
+const scrollHandler = (widthGrow:Element[]) => {
+  checkItems(widthGrow);
+}
+
+
+
 
 const ScrollHandler: React.FC<{
   mainId: string,
@@ -26,38 +57,20 @@ const ScrollHandler: React.FC<{
 
   }).then((mainEl) => {
     let widthGrow:Element[] = Array.from(mainEl.find('.width-grow-0'));
+    gtagEvent({ action:'found',category:'width_grow',label:'count',value:widthGrow.length });
 
-    // console.log(widthGrow.length);
-
-    const viewHeight: number = window.innerHeight;
-
-    const checkItems = () => {
-      for(let i = 0; i < widthGrow.length; i++){
-        var currItem = widthGrow[i];
-        if(currItem){
-          checkItem(currItem);
-        }
-      }
-    }
-
-    const checkItem = (item: Element) => {
-      if(item){
-        var itemTop = item.getBoundingClientRect().top;
-        if ( itemTop > 0 && itemTop < viewHeight){
-          item.classList.add("width-grow-1");
-          item.classList.remove("width-grow-0");
-        }
-      }
-    }
-
-    const scrollHandler = (e: Event) => {
-      checkItems();
-    }
     
-    checkItems();
-    document.onscroll = scrollHandler;
+    checkItems(widthGrow);
+    $(document).on('scroll', () => scrollHandler(widthGrow)) ;
 
-  }).catch();
+  }).catch(() => {
+    gtagEvent({ action:'found', category:'error', label:`main #${mainId} not_found` })
+    console.log('main not found. quering whole document instead');
+    let widthGrow:Element[] = Array.from($(document).find('.width-grow-0'));
+    gtagEvent({ action:'found',category:'width_grow',label:'count',value:widthGrow.length });
+    checkItems(widthGrow);
+    $(document).on('scroll', () => scrollHandler(widthGrow)) ;
+  });
 
   return(<></>);
 }
