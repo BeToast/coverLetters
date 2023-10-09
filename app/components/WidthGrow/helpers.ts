@@ -19,7 +19,7 @@ const widthGrowFallback = () => {
 
 //widthGrowFallback if client rendered
 if(isClient()){
-  setTimeout(widthGrowFallback, 1500);
+  setTimeout(widthGrowFallback, 100);
 }
 
 function isClient() {

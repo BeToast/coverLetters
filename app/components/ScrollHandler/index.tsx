@@ -20,8 +20,8 @@ const checkItem = (item: Element) => {
   if(item){
     var itemTop = item.getBoundingClientRect().top;
     if ( itemTop > 0 && itemTop < viewHeight){
-      // item.classList.add("width-grow-1");
-      // item.classList.remove("width-grow-0");
+      item.classList.add("width-grow-1");
+      item.classList.remove("width-grow-0");
     }
   }
 }
