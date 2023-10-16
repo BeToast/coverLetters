@@ -5,6 +5,8 @@ import AppearAffect from 'components/AppearAffect';
 import Hr from 'components/Hr';
 import Signature from 'components/Signature';
 
+import { cvUrl } from '../static';
+
 // scroll  handler
 import dynamic from 'next/dynamic'
 const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
@@ -48,7 +50,7 @@ export default function Template() {
                     view my CV
                   </Text.Link>
                   <Text.Link
-                    href='https://github.com/BeToast'
+                    href={cvUrl}
                   >
                     view my Github
                   </Text.Link>  

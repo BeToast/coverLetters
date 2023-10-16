@@ -7,40 +7,40 @@ import Signature from 'components/Signature';
 
 // scroll  handler
 import dynamic from 'next/dynamic'
-import { cvUrl } from './static';
+import { cvUrl } from '../static';
 const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
   ssr: false,
 });
 
 export default function Template() {
-  const mainId = "template";
+  const mainId = "tailwindconversion";
 
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
-      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[587px] w-full pc:w-[540px] pc:order-last'}>
+      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[620px] w-full pc:w-[540px] pc:order-last'}>
         <AppearAffect>
           <div className='flex flex-col justify-center h-full'>
             <div className='pc:w-[500px]'>
               <Title>
-                Meet your new developer
+                Meet your Tailwind enthusaist
               </Title>
               <Hr className='my-6'/>
               <Text.Frame>
                 <Text.Greeting>
-                  Hyia,
+                  Hello!
                 </Text.Greeting>
                 <Text.P>
-              Lorem ipsum dolor sit amet, te vix lobortis reprimique, eam consul iisque omittam ut. Mel rebum imperdiet molestiae ex, labores offendit sed ut. Ei quem dicant apeirian sed, ne ius imperdiet cotidieque. Mei tantas doctus cu.
+                  I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Over the summer, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, Tailwindcss and Firebase Hosting. I just finished my first freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                 </Text.P>
                 <Text.P>
-          Mea ex affert eirmod gloriatur. Possit definiebas has ut, vis ullum meliore referrentur in. Est dico veniam decore te, nonumes reformidans vel ut, no zril regione incorrupte per. Duo corpora ponderum id. Vix et docendi sensibus, et dolorem appetere reprehendunt eos, pri id inani denique.
+                  I find immense satisfaction in using Tailwind CSS for styling; its lovely styling without opening .css files. I would enjoy rewriting a few pages styling with Tailwind, and my enthusiasm for working with it ensures a swift project delivery.
                 </Text.P>
               </Text.Frame>
             </div>
             <div className='flex flex-wrap pc:w-[500px] items-end justify-between pt-12 pb-1'>
               <div className='pr-8'>
                 <Text.Frame>
-                  <Text.Link
+                <Text.Link
                     href={cvUrl}
                   >
                     view my CV
@@ -69,7 +69,7 @@ export default function Template() {
               </div>
               <div className='mt-12'>
                 <Signature>
-                  All the best,
+                  I look forward to your reply,
                 </Signature>
               </div>
             </div>

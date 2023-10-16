@@ -7,6 +7,7 @@ import Signature from 'components/Signature';
 
 // scroll  handler
 import dynamic from 'next/dynamic'
+import { cvUrl, cvUrlHospitality } from '../static';
 const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
   ssr: false,
 });
@@ -40,7 +41,7 @@ export default function Template() {
               <div className='pr-8'>
                 <Text.Frame>
                   <Text.Link
-                    href='https://drive.google.com/file/d/1Q2k9S-p9mIgeMlnbA1m2c_bNc6tfcomL/view?usp=sharing'
+                    href={cvUrlHospitality}
                   >
                     view my CV
                   </Text.Link>
