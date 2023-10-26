@@ -5,7 +5,7 @@ import AppearAffect from 'components/AppearAffect';
 import Hr from 'components/Hr';
 import Signature from 'components/Signature';
 
-import { cvUrl } from '../static';
+import { cvUrl, githubUrl } from '../static';
 
 // scroll  handler
 import dynamic from 'next/dynamic'
@@ -18,7 +18,7 @@ export default function Template() {
 
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
-      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[640px] w-full pc:w-[540px] pc:order-last'}>
+      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[645px] w-full pc:w-[540px] pc:order-last'}>
         <AppearAffect>
           <div className='flex flex-col justify-center h-full'>
             <div className='pc:w-[500px]'>
@@ -42,12 +42,12 @@ export default function Template() {
               <div className='pr-8'>
                 <Text.Frame>
                 <Text.Link
-                    href='https://drive.google.com/file/d/1XuhAnWxb-Rg4Q3mBLxxKbghDf-1J13Xr/view'
+                    href='https://drive.google.com/file/d/1sPM7g4-HKRr5_PyMZSm-u-FvHt5Exmu4/view?usp=sharing'
                   >
                     view my CV
                   </Text.Link>
                   <Text.Link
-                    href={cvUrl}
+                    href={githubUrl}
                   >
                     view my Github
                   </Text.Link>  

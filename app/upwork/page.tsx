@@ -7,7 +7,7 @@ import Signature from 'components/Signature';
 
 // scroll  handler
 import dynamic from 'next/dynamic'
-import { cvUrl } from '../static';
+import { cvUrl, githubUrl } from '../static';
 const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
   ssr: false,
 });
@@ -46,7 +46,7 @@ export default function Template() {
                     view my CV
                   </Text.Link>
                   <Text.Link
-                    href='https://github.com/BeToast'
+                    href={githubUrl}
                   >
                     view my Github
                   </Text.Link>  
