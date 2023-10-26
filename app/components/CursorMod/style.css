@@ -1,5 +1,5 @@
 .cursor{
-  display: block;
+  display: fixed;
   width: 24px;
   height: 24px;
   transform: translate(-50%, -50%);

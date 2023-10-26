@@ -11,6 +11,8 @@
   --background-hsl: hsl(191, 9%, 65%);
 
   cursor: none !important;
+
+  scrollbar-gutter: stable;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -35,4 +37,34 @@ body {
 .container-snap {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* width */
+::-webkit-scrollbar { 
+  @apply w-[14px] ;
+} 
+.nav-scroll::-webkit-scrollbar { 
+  @apply w-2 ;
+} 
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-transparent ;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-yellow-dark ;
+  @apply rounded-2xl ;
+  @apply border-2 ;
+  border: solid transparent ;
+  background-clip: content-box ;
+}
+.nav-scroll::-webkit-scrollbar-thumb {
+  @apply border ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { 
+  @apply bg-yellow-light ; 
+  @apply shadow-sm ;
 }

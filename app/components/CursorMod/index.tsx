@@ -1,7 +1,7 @@
 'use client'
 
 import { gtagEvent } from '@/app/lib/googleAnalytics/helpers';
-import './style.css'
+import './style.css';
 import $ from "jquery";
 
 const CursorMod: React.FC<{
@@ -28,13 +28,22 @@ const CursorMod: React.FC<{
 
   }).then((cursor) => {
     gtagEvent({ action:'loaded', category:'cursor', label:'good' })
-    const positionElement = (e: any)=> {
+    const positionCursor = (e: any)=> {
       cursor.css('left', e.clientX + 'px');
-      cursor.css('top', e.clientY + 'px');
+      cursor.css('top', (e.clientY + window.scrollY) + 'px');
+    }
+    const hideInScrollbar = (e: any)=> {
+      if(e.clientX >= document.body.clientWidth){
+        hideCursor(e);
+      }else if(e.clientX < document.body.clientWidth){
+        showCursor(e) ;
+      }
     }
     
-  
-    window.addEventListener('mousemove', positionElement) ; 
+    window.addEventListener('wheel', positionCursor) ;
+    window.addEventListener('scroll', positionCursor) ;
+    window.addEventListener('mousemove', positionCursor) ;
+    window.addEventListener('mousemove', hideInScrollbar) ;
     window.addEventListener('mousedown', shrinkCursor) ;
     window.addEventListener('mouseup', growCursor) ;
     $(document).on('mouseleave', hideCursor) ;

@@ -45,7 +45,7 @@ export default function RootLayout({
       <head>
       </head>
       {/* <body className="h-full w-full"> */}
-      <body className="h-screen w-screen selection:bg-yellow-light">
+      <body className="h-screen w-full selection:bg-yellow-light overflow-x-hidden">
         {children}
 
         <GtagScriptInit />
