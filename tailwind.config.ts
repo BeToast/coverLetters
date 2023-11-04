@@ -33,8 +33,9 @@ const config: Config = {
       'suit-dark': 'hsl(214, 9%, 15%)',
       'suit-darker': 'hsl(216, 11.6%, 8.4%)',
 
-      'yellow': 'hsl(18, 26%, 88%)',
       'yellow-light': 'hsl(30, 100%, 94%)',
+      'yellow': 'hsl(18, 26%, 88%)',
+      'yellow-dark': 'hsl(18, 23%, 80%)',
     },
   },
   plugins: [],

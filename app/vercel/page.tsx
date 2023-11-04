@@ -5,43 +5,44 @@ import AppearAffect from 'components/AppearAffect';
 import Hr from 'components/Hr';
 import Signature from 'components/Signature';
 
+import { cvUrl, githubUrl } from '../static';
+
 // scroll  handler
 import dynamic from 'next/dynamic'
-import { cvUrl, githubUrl } from '../static';
 const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
   ssr: false,
 });
 
 export default function Template() {
-  const mainId = "portershed";
+  const mainId = "vercel";
 
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
-      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[620px] w-full pc:w-[540px] pc:order-last'}>
+      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[645px] w-full pc:w-[540px] pc:order-last'}>
         <AppearAffect>
           <div className='flex flex-col justify-center h-full'>
             <div className='pc:w-[500px]'>
               <Title>
-              Meet your new developer 😉
+              Meet your new developer
               </Title>
               <Hr className='my-6'/>
               <Text.Frame>
                 <Text.Greeting>
-                  Hello!
+                  Hello Vercel!
                 </Text.Greeting>
                 <Text.P>
-                  I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Over the summer, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, Tailwindcss and Firebase Hosting. I just finished my first freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
+                In May, I earned my Bachelor of Science (Honours) in Computer Science and Information Technology from the National University of Ireland, Galway. During my studies, I gained a strong foundation in the field and honed my skills in developing full-stack web applications using modern technologies. Recently, I completed my first project as a web developer for Soma Co-working in Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                 </Text.P>
                 <Text.P>
-                  I am a highly adaptable individual and would seamlessly integrate into your existing team. I have a strong passion for developing Next.js web applications, and I am committed to delivering high-quality work. I am also excited to mention that I am well-versed in using Tailwind CSS for styling. Looking forward to the opportunity to contribute to your projects.
+                I demonstrated my reliability, trustworthiness, and proactivity through my previous roles as President of the Chess Society and President/Treasurer of the Dochas Christian Society. My career goal is to build full-stack web applications using modern technologies like Next.js and Tailwind CSS, or to contribute to the development of cutting-edge web frameworks. I prefer working with teams that embrace innovation, rather than relying on outdated technologies.
                 </Text.P>
               </Text.Frame>
             </div>
-            <div className='flex flex-wrap pc:w-[500px] items-end justify-between pt-12 pb-1'>
+            <div className='flex flex-wrap pc:w-[500px] items-end justify-between pt-8 pb-1'>
               <div className='pr-8'>
                 <Text.Frame>
                 <Text.Link
-                    href={cvUrl}
+                    href='https://drive.google.com/file/d/1sPM7g4-HKRr5_PyMZSm-u-FvHt5Exmu4/view?usp=sharing'
                   >
                     view my CV
                   </Text.Link>
@@ -56,9 +57,9 @@ export default function Template() {
                     view my Linkedin
                   </Text.Link>
                   <Text.Link
-                    href='tel:+353-85-260-9548'
+                    href='tel:+1-760-902-3792'
                   >
-                    085-260-9548
+                    +1 760-902-3792
                   </Text.Link>
                   <Text.Link
                     href='mailto:blake.m.preston@gmail.com'
@@ -69,7 +70,7 @@ export default function Template() {
               </div>
               <div className='mt-12'>
                 <Signature>
-                  I look forward to your reply,
+                  I eagerly anticipate your response,
                 </Signature>
               </div>
             </div>
