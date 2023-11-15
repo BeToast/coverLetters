@@ -1,3 +1,6 @@
+'use client'
+
+import { isClient } from '@/app/static';
 import $ from 'jquery';
 
 import { gtagEvent } from 'lib/googleAnalytics/helpers';
@@ -20,8 +23,4 @@ const widthGrowFallback = () => {
 //widthGrowFallback if client rendered
 if(isClient()){
   setTimeout(widthGrowFallback, 100);
-}
-
-function isClient() {
-  return typeof window != 'undefined' && window.document;
 }

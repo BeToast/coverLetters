@@ -1,5 +1,5 @@
 import './style.css'
-import { shrinkCursor, growCursor } from 'components/CursorMod';
+import { shrinkCursor, growCursor } from 'components/CursorMod/helpers';
 
 const Frame: React.FC<{
   children: React.ReactNode,

@@ -1,0 +1,573 @@
+[debug] [2023-11-15T10:52:45.063Z] ----------------------------------------------------------------------
+[debug] [2023-11-15T10:52:45.066Z] Command:       /home/blake/.nvm/versions/node/v20.9.0/bin/node /home/blake/.nvm/versions/node/v20.9.0/bin/firebase deploy
+[debug] [2023-11-15T10:52:45.067Z] CLI Version:   12.8.0
+[debug] [2023-11-15T10:52:45.067Z] Platform:      linux
+[debug] [2023-11-15T10:52:45.067Z] Node Version:  v20.9.0
+[debug] [2023-11-15T10:52:45.068Z] Time:          Wed Nov 15 2023 10:52:45 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-11-15T10:52:45.068Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-15T10:52:45.072Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-11-15T10:52:45.207Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-15T10:52:45.208Z] > authorizing via signed-in user (blake.m.preston@gmail.com)
+[debug] [2023-11-15T10:52:45.208Z] [iam] checking project blake-prestonized for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-15T10:52:45.209Z] > refreshing access token with scopes: []
+[debug] [2023-11-15T10:52:45.210Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-11-15T10:52:45.210Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-15T10:52:45.297Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-11-15T10:52:45.297Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-11-15T10:52:45.313Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions [none]
+[debug] [2023-11-15T10:52:45.313Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions x-goog-quota-user=projects/blake-prestonized
+[debug] [2023-11-15T10:52:45.313Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-15T10:52:45.481Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-11-15T10:52:45.482Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-11-15T10:52:45.509Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions 200
+[debug] [2023-11-15T10:52:45.510Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blake-prestonized:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-11-15T10:52:45.511Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized [none]
+[debug] [2023-11-15T10:52:45.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized 200
+[debug] [2023-11-15T10:52:45.809Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blake-prestonized {"projectId":"blake-prestonized","projectNumber":"483376652902","displayName":"Prestonized","name":"projects/blake-prestonized","resources":{"hostingSite":"blake-prestonized"},"state":"ACTIVE","etag":"1_02a747d3-be21-440e-8683-7230fee1ba48"}
+[debug] [2023-11-15T10:52:47.831Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites pageToken=&pageSize=10
+[debug] [2023-11-15T10:52:48.729Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites 200
+[debug] [2023-11-15T10:52:48.729Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/blake-prestonized/sites {"sites":[{"name":"projects/blake-prestonized/sites/blake-prestonized","defaultUrl":"https://blake-prestonized.web.app","appId":"1:483376652902:web:d4ddaeb4f23513a6d043a7","type":"DEFAULT_SITE"},{"name":"projects/blake-prestonized/sites/cover-letter","defaultUrl":"https://cover-letter.web.app","appId":"1:483376652902:web:976addc43103c73dd043a7","type":"USER_SITE"}]}
+[debug] [2023-11-15T10:52:48.729Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config [none]
+[debug] [2023-11-15T10:52:49.359Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config 200
+[debug] [2023-11-15T10:52:49.359Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:483376652902:web:976addc43103c73dd043a7/config {"projectId":"blake-prestonized","appId":"1:483376652902:web:976addc43103c73dd043a7","storageBucket":"blake-prestonized.appspot.com","apiKey":"AIzaSyAgRqeJ2IHo6WyxPTqM-j8PsYf9mCTT1t8","authDomain":"blake-prestonized.firebaseapp.com","messagingSenderId":"483376652902","measurementId":"G-DZBJF5M388"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    ▲ Next.js 14.0.2
+
+[info] 
+   Creating an optimized production build ...
+
+[info] (node:32413) [DEP_WEBPACK_MODULE_UPDATE_HASH] DeprecationWarning: Module.updateHash: Use new ChunkGraph API
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/25) ...
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/chunks/18.js:1:1585)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/condihospitality". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/databricks". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/chunks/18.js:1:1585)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/deliverect". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info]    Generating static pages (6/25) 
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/c3ai". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/ericsson". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/dev/page.js:1:2723)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/ghr". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/dev/page.js:1:2723)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/flowtraders". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/intercom". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info]    Generating static pages (12/25) 
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/orangequarter". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] 
+Error occurred prerendering page "/openjaw". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/renttherunway". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/portershed". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/commerce7". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info]    Generating static pages (18/25) 
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/tailwindconversion". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/storyteq". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/tencent". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/_not-found.js:1:2204)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info] TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/vercel". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+Error occurred prerendering page "/upwork". Read more: https://nextjs.org/docs/messages/prerender-error
+TypeError: Cannot read properties of undefined (reading 'document')
+    at /home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:58
+    at 5767 (/home/blake/Webdev/coverletters/.next/server/chunks/5.js:10:176)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at 8135 (/home/blake/Webdev/coverletters/.next/server/app/masking/page.js:1:2665)
+    at t (/home/blake/Webdev/coverletters/.next/server/webpack-runtime.js:1:127)
+    at F (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91961)
+    at /home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94376
+    at W._fromJSON (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:94814)
+    at JSON.parse (<anonymous>)
+    at N (/home/blake/Webdev/coverletters/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:91682)
+
+[info]  ✓ Generating static pages (25/25) 
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/c3ai/page: /c3ai
+	/commerce7/page: /commerce7
+	/condihospitality/page: /condihospitality
+	/databricks/page: /databricks
+	/deliverect/page: /deliverect
+	/ericsson/page: /ericsson
+	/flowtraders/page: /flowtraders
+	/ghr/page: /ghr
+	/intercom/page: /intercom
+	/openjaw/page: /openjaw
+	/orangequarter/page: /orangequarter
+	/page: /
+	/portershed/page: /portershed
+	/renttherunway/page: /renttherunway
+	/storyteq/page: /storyteq
+	/tailwindconversion/page: /tailwindconversion
+	/tencent/page: /tencent
+	/upwork/page: /upwork
+	/vercel/page: /vercel
+
+[debug] [2023-11-15T10:53:13.403Z] Error: ENOENT: no such file or directory, open '/home/blake/Webdev/coverletters/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
