@@ -13,27 +13,27 @@ const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'),{
 });
 
 export default function Template() {
-  const mainId = "orangequarter";
+  const mainId = "c3ai";
 
   return (<>
     <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
-      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[660px] w-full pc:w-[540px] pc:order-last'}>
+      <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[640px] w-full pc:w-[540px] pc:order-last'}>
         <AppearAffect>
           <div className='flex flex-col justify-center h-full'>
             <div className='pc:w-[500px]'>
               <Title>
-                I intend to relocate to the Nederlands as a front-end dev.
+              Meet your new developer 😉
               </Title>
               <Hr className='my-6'/>
               <Text.Frame>
                 <Text.Greeting>
-                  Hello Orange Quarter!
+                  Hello C3!
                 </Text.Greeting>
                 <Text.P>
                   I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Over the summer, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, Tailwindcss and Firebase Hosting. I reccently finished a freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link> Currenly, I am working on a church website template which statically generates routes and pages from markdown files using Next.js, Tailwindcss, and Google Firebase.
                 </Text.P>
                 <Text.P>
-                  I am sure your client will be pleased with my technical and my interpersonal skills for your Junior Software Developer position in Rotterdam.
+                  I am sure you will be pleased with my technical and my interpersonal skills for this entry-level position. I hope to contribute to the progrssion of AI at the enterprize level with you at C3ai.
                 </Text.P>
               </Text.Frame>
             </div>
