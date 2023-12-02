@@ -1,0 +1,136 @@
+blake@blakeubuntu:~/Webdev/coverletters$ firebase deploy
+
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+   Creating an optimized production build ...
+
+(node:123626) [DEP_WEBPACK_MODULE_UPDATE_HASH] DeprecationWarning: Module.updateHash: Use new ChunkGraph API
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+   Collecting page data ...
+
+   Generating static pages (0/36) ...
+
+   Generating static pages (9/36) 
+
+   Generating static pages (18/36) 
+
+   Generating static pages (27/36) 
+
+ ✓ Generating static pages (36/36) 
+
+   Finalizing page optimization ...
+
+   Collecting build traces ...
+
+
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    3.68 kB         122 kB
+├ ○ /_not-found                          882 B          81.5 kB
+├ ○ /attendi                             3.69 kB         122 kB
+├ ○ /c3ai                                3.68 kB         122 kB
+├ ○ /cgi                                 3.68 kB         122 kB
+├ ○ /commerce7                           3.68 kB         122 kB
+├ ○ /conclusion                          3.68 kB         122 kB
+├ ○ /condihospitality                    3.69 kB         122 kB
+├ ○ /databricks                          3.69 kB         122 kB
+├ ○ /deliverect                          3.68 kB         122 kB
+├ ○ /dev                                 1.43 kB         113 kB
+├ ○ /diligent                            3.68 kB         122 kB
+├ ○ /ericsson                            3.69 kB         122 kB
+├ ○ /experis                             3.68 kB         122 kB
+├ ○ /experis/1                           3.68 kB         122 kB
+├ ○ /flowtraders                         3.68 kB         122 kB
+├ ○ /genesys-frontend                    3.68 kB         122 kB
+├ ○ /genesys-fullstack                   3.68 kB         122 kB
+├ ○ /ghr                                 3.68 kB         122 kB
+├ ○ /intercom                            3.68 kB         122 kB
+├ ○ /kaseya                              3.68 kB         122 kB
+├ ○ /openclaims                          3.68 kB         122 kB
+├ ○ /openjaw                             3.69 kB         122 kB
+├ ○ /orangequarter                       3.68 kB         122 kB
+├ ○ /portershed                          3.68 kB         122 kB
+├ ○ /renttherunway                       3.68 kB         122 kB
+├ ○ /searchx                             3.69 kB         122 kB
+├ ○ /storyteq                            3.69 kB         122 kB
+├ ○ /tailwindconversion                  3.68 kB         122 kB
+├ ○ /tencent                             3.68 kB         122 kB
+├ ○ /upwork                              3.69 kB         122 kB
+├ ○ /vercel                              3.68 kB         122 kB
+└ ○ /xlaboratory                         3.68 kB         122 kB
++ First Load JS shared by all            80.6 kB
+  ├ chunks/472-4e2e57b95d647320.js       27.5 kB
+  ├ chunks/fd9d1056-16f14d1599bb12d9.js  50.9 kB
+  ├ chunks/main-app-5a33fa4d0792e464.js  232 B
+  └ chunks/webpack-d6ffa5993ecfd230.js   1.92 kB
+
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+Building a Cloud Function to run this application. This is needed due to:
+ • Image Optimization
+ • non-static component /_not-found
+
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'firebase-frameworks@0.10.6',
+npm WARN EBADENGINE   required: { node: '^16.0.0 || ^18.0.0' },
+npm WARN EBADENGINE   current: { node: 'v20.9.0', npm: '10.1.0' }
+npm WARN EBADENGINE }
+
+up to date in 15s
+
+133 packages are looking for funding
+  run `npm fund` for details
+
+=== Deploying to 'blake-prestonized'...
+
+i  deploying functions, hosting
+i  functions: preparing codebase firebase-frameworks-cover-letter for deployment
+i  functions: ensuring required API cloudfunctions.googleapis.com is enabled...
+i  functions: ensuring required API cloudbuild.googleapis.com is enabled...
+i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled...
+✔  functions: required API cloudbuild.googleapis.com is enabled
+✔  functions: required API cloudfunctions.googleapis.com is enabled
+✔  artifactregistry: required API artifactregistry.googleapis.com is enabled
+i  functions: Loading and analyzing source code for codebase firebase-frameworks-cover-letter to determine what to deploy
+Serving at port 8103
+
+i  functions: Loaded environment variables from .env.
+i  functions: preparing .firebase/cover-letter/functions directory for uploading...
+i  functions: packaged /home/blake/Webdev/coverletters/.firebase/cover-letter/functions (92.22 MB) for uploading
+i  functions: ensuring required API run.googleapis.com is enabled...
+i  functions: ensuring required API eventarc.googleapis.com is enabled...
+i  functions: ensuring required API pubsub.googleapis.com is enabled...
+i  functions: ensuring required API storage.googleapis.com is enabled...
+✔  functions: required API run.googleapis.com is enabled
+✔  functions: required API storage.googleapis.com is enabled
+✔  functions: required API eventarc.googleapis.com is enabled
+✔  functions: required API pubsub.googleapis.com is enabled
+i  functions: generating the service identity for pubsub.googleapis.com...
+i  functions: generating the service identity for eventarc.googleapis.com...
+✔  functions: .firebase/cover-letter/functions folder uploaded successfully
+i  hosting[cover-letter]: beginning deploy...
+i  hosting[cover-letter]: found 474 files in .firebase/cover-letter/hosting
+✔  hosting[cover-letter]: file upload complete
+i  functions: updating Node.js 20 (2nd Gen) function firebase-frameworks-cover-letter:ssrcoverletter(europe-west1)...
+✔  functions[firebase-frameworks-cover-letter:ssrcoverletter(europe-west1)] Successful update operation.
+Function URL (firebase-frameworks-cover-letter:ssrcoverletter(europe-west1)): https://ssrcoverletter-mqnz3x5hha-ew.a.run.app
+i  functions: cleaning up build files...
+i  hosting[cover-letter]: finalizing version...
+✔  hosting[cover-letter]: version finalized
+i  hosting[cover-letter]: releasing new version...
+✔  hosting[cover-letter]: release complete
+
+✔  Deploy complete!
