@@ -134,3 +134,20 @@ i  hosting[cover-letter]: releasing new version...
 ✔  hosting[cover-letter]: release complete
 
 ✔  Deploy complete!
+
+
+
+
+
+
+
+
+blake@blakeubuntu:~/Webdev/coverletters$ npm run dev
+
+> coverletters@0.1.0 dev
+> next dev
+
+  ▲ Next.js 13.5.6
+  - Local:        http://localhost:3000
+
+ ✓ Ready in 3.4s
