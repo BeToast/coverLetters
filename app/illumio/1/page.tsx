@@ -7,13 +7,13 @@ import Signature from 'components/Signature';
 
 // scroll  handler
 import dynamic from 'next/dynamic'
-import { cvUrl } from '../static';
+import { cvUrl } from '../../static';
 const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'), {
    ssr: false,
 });
 
 export default function Template() {
-   const mainId = "illumio";
+   const mainId = "illumio1";
 
    return (<>
       <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
@@ -22,7 +22,7 @@ export default function Template() {
                <div className='flex flex-col justify-center h-full'>
                   <div className='pc:w-[500px]'>
                      <Title>
-                        Meet your new Junior Full Stack Engineer, Gen AI 😉
+                        Meet your new Junior UI Engineer, Core ML 😉
                      </Title>
                      <Hr className='my-6' />
                      <Text.Frame>
@@ -33,7 +33,7 @@ export default function Template() {
                            I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Since graduating, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, TypeScript, Tailwindcss and Firebase Hosting. I reccently finished a freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                         </Text.P>
                         <Text.P>
-                           I have all experience requirements besides Golang and LLM tooling. I believe this will not be an issue as I have used LLM's before and have strong OOP programming skills. I would be happy to start my career with you at Illumio.
+                           I am strong with React.js, understand REST, have queried APIs on the client, and have written async promises. Alongside my technical experience, I am sure you will be pleased with my interpersonal skills. It would be delightful to 'innovate relentlessly' at Illumio.
                         </Text.P>
                      </Text.Frame>
                   </div>
