@@ -33,7 +33,7 @@ export default function Template() {
                            I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Since graduating, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, TypeScript, Tailwindcss and Firebase Hosting. I reccently finished a freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                         </Text.P>
                         <Text.P>
-                           I have all experience requirements besides Golang and LLM tooling. I believe this will not be an issue as I have fine-tuned LLMs before and have strong OOP programming skills. I would be happy to start my career with you at Illumio.
+                           I have all experience requirements besides Golang and LLM tooling. I believe this will not be an issue as I have fine-tuned LLMs before and have strong OOP programming skills. It would be delightful to 'innovate relentlessly' at Illumio.
                         </Text.P>
                      </Text.Frame>
                   </div>
