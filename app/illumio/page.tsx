@@ -56,9 +56,9 @@ export default function Template() {
                               view my Linkedin
                            </Text.Link>
                            <Text.Link
-                              href='tel:+353-85-260-9548'
+                              href='tel:+1-760-902-3792'
                            >
-                              085-260-9548
+                              760-902-3792
                            </Text.Link>
                            <Text.Link
                               href='mailto:blake.m.preston@gmail.com'
