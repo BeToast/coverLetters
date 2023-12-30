@@ -13,7 +13,7 @@ const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'), {
 });
 
 export default function Template() {
-   const mainId = "portershed";
+   const mainId = "minware";
 
    return (<>
       <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
@@ -22,18 +22,18 @@ export default function Template() {
                <div className='flex flex-col justify-center h-full'>
                   <div className='pc:w-[500px]'>
                      <Title>
-                        Meet your new Junior Frontend Developer 😉
+                        Meet your new Junior Front End Engineer 😉
                      </Title>
                      <Hr className='my-6' />
                      <Text.Frame>
                         <Text.Greeting>
-                           Hello Storyteq!
+                           Hello Minware!
                         </Text.Greeting>
                         <Text.P>
                            I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Over the summer, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, Tailwindcss and Firebase Hosting. I reccently finished a freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link> Currenly, I am working on a church website template which statically generates routes and pages from markdown files using Next.js, Tailwindcss, and Google Firebase.
                         </Text.P>
                         <Text.P>
-                           I am passionate about Frontend development and will make a positive impact, regardless of company, during my career. I am sure you will be pleased with my technical skills alongside my strong interpersonal skills.
+                           I am passionate about Frontend development and would make a positive impact at Minware. I am sure you will be pleased with my technical skills alongside my strong interpersonal skills.
                         </Text.P>
                      </Text.Frame>
                   </div>

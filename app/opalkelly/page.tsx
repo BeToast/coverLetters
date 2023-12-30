@@ -13,27 +13,27 @@ const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'), {
 });
 
 export default function Template() {
-   const mainId = "portershed";
+   const mainId = "opalkelly";
 
    return (<>
       <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
-         <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[640px] w-full pc:w-[540px] pc:order-last'}>
+         <div className={'px-10 pt-12 pc:pt-0 pc:pl-10 pc:pr-0 pc:h-[670px] w-full pc:w-[540px] pc:order-last'}>
             <AppearAffect>
                <div className='flex flex-col justify-center h-full'>
                   <div className='pc:w-[500px]'>
                      <Title>
-                        Meet your new Junior Frontend Developer 😉
+                        Meet your new Entry-Level Computer Engineer 😉
                      </Title>
                      <Hr className='my-6' />
                      <Text.Frame>
                         <Text.Greeting>
-                           Hello Storyteq!
+                           Hello Opal Kelly!
                         </Text.Greeting>
                         <Text.P>
-                           I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Over the summer, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, Tailwindcss and Firebase Hosting. I reccently finished a freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link> Currenly, I am working on a church website template which statically generates routes and pages from markdown files using Next.js, Tailwindcss, and Google Firebase.
+                           I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the University of Galway. Since graduating, I applied my knowledge and learned how to develop full-stack web apps with Next.js, React, TypeScript, Tailwindcss and Firebase Hosting. I reccently finished a freelance project as a web developer for Soma Co-working Moycullen. <Text.Link noP={true} href='https://somacowork.ie/'>https://somacowork.ie/</Text.Link>
                         </Text.P>
                         <Text.P>
-                           I am passionate about Frontend development and will make a positive impact, regardless of company, during my career. I am sure you will be pleased with my technical skills alongside my strong interpersonal skills.
+                           Although I am most experienced in Web Development, I am intermediate in Python and Java. Additionally, I have been learning c++ because I find the lower level control of parrelization and memory management facinating. Regardless of the programming language I would write at Opal Kelly, I am sure you will be please with my interpersonal and technical skills.
                         </Text.P>
                      </Text.Frame>
                   </div>
@@ -56,9 +56,9 @@ export default function Template() {
                               view my Linkedin
                            </Text.Link>
                            <Text.Link
-                              href='tel:+353-85-260-9548'
+                              href='tel:+1-760-902-3792'
                            >
-                              085-260-9548
+                              760-902-3792
                            </Text.Link>
                            <Text.Link
                               href='mailto:blake.m.preston@gmail.com'
@@ -69,7 +69,7 @@ export default function Template() {
                      </div>
                      <div className='mt-12'>
                         <Signature>
-                           I eagerly await your reply,
+                           Let's chat soon,
                         </Signature>
                      </div>
                   </div>
