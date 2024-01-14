@@ -30,7 +30,7 @@ export default function Template() {
                            Hello Mitchell and Co!
                         </Text.Greeting>
                         <Text.P>
-                           I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the National University of Ireland, Galway. I am eager to begin my career after relocating to Basalt on January 31st
+                           I, Blake Preston, recently finished my studies in Computer Science and Information Technology at the National University of Ireland, Galway. I am eager to begin my career after relocating to Basalt on January 31st.
                         </Text.P>
                         <Text.P>
                            I firmly believe that the foundation of relationships lies in personal interaction, trust, and effective communication. My technical mind and strong interpersonal skills make me an ideal consultant for Mitchell and Company. Among my peers, I am known for my honesty, reliability and punctuality.
@@ -69,7 +69,7 @@ export default function Template() {
                      </div>
                      <div className='mt-12'>
                         <Signature>
-                           Let's chat soon,
+                           I hope to hear from you soon,
                         </Signature>
                      </div>
                   </div>
