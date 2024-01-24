@@ -69,7 +69,7 @@ export default function Template() {
                      </div>
                      <div className='mt-12'>
                         <Signature>
-                           I look forward to your reply,
+                           Let's connect soon,
                         </Signature>
                      </div>
                   </div>
