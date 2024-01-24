@@ -13,7 +13,7 @@ const DynamicScrollHandler = dynamic(() => import('components/ScrollHandler'), {
 });
 
 export default function Template() {
-   const mainId = "genesys-frontend";
+   const mainId = "jacob";
 
    return (<>
       <main id={mainId} className='flex flex-wrap justify-center items-center min-h-full w-[940px] max-w-full m-auto'>
