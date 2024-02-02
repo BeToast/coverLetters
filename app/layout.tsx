@@ -3,8 +3,8 @@ import './globals.css'
 
 // scroll  handler
 import dynamic from 'next/dynamic'
-const DynamicCursorMod = dynamic(() => import('components/CursorMod'),{
-  ssr: false,
+const DynamicCursorMod = dynamic(() => import('components/CursorMod'), {
+   ssr: false,
 });
 // import CursorMod from './components/CursorMod';
 
@@ -15,19 +15,19 @@ import GtagScriptInit from 'components/Gtag/GtagScriptInit';
 // font
 import { Kaisei_HarunoUmi, Bai_Jamjuree, } from 'next/font/google';
 const fontHead = Kaisei_HarunoUmi({
-  subsets: ['latin'],
-  weight: ["400", "500", "700"],
-  variable: '--font-head',
+   subsets: ['latin'],
+   weight: ["400", "500", "700"],
+   variable: '--font-head',
 });
 const fontBody = Bai_Jamjuree({
-  subsets: ['latin'],
-  weight: ["200", "300", "400", "500", "600", "700"],
-  variable: '--font-body',
+   subsets: ['latin'],
+   weight: ["200", "300", "400", "500", "600", "700"],
+   variable: '--font-body',
 });
 
 export const metadata: Metadata = {
-  title: 'Blake Preston',
-  description: 'this is my cover letter',
+   title: 'Blake Preston',
+   description: 'this is my cover letter',
 }
 
 // //is production?????????????? sheeeesssshhhh!!
@@ -35,22 +35,22 @@ export const metadata: Metadata = {
 
 
 export default function RootLayout({
-  children,
+   children,
 }: {
-  children: React.ReactNode
+   children: React.ReactNode
 }) {
 
-  return (
-    <html lang="en" className={`${fontHead.variable} ${fontBody.variable} scroll-smooth`}>
-      <head>
-      </head>
-      {/* <body className="h-full w-full"> */}
-      <body className="h-screen w-full selection:bg-yellow-light overflow-x-hidden">
-        {children}
+   return (
+      <html lang="en" className={`${fontHead.variable} ${fontBody.variable} scroll-smooth`}>
+         <head>
+         </head>
+         {/* <body className="h-full w-full"> */}
+         <body className="h-screen w-full selection:bg-yellow-light overflow-x-hidden">
+            {children}
 
-        <GtagScriptInit />
-        <DynamicCursorMod />
-      </body>
-    </html>
-  )
+            <GtagScriptInit />
+            <DynamicCursorMod />
+         </body>
+      </html>
+   )
 }
